@@ -1,0 +1,572 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+}
+
+:root{
+    --primary-color:#eb5757;
+    --secondary-color:#222;
+    --light-color:#f9f9f9;
+    --dark-color: #333;
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+    height: 150px;
+    z-index: 10;
+    background-color: var(--primary-color);
+}
+
+header .covid{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+}
+
+header .covid button{
+    border: none;
+    width: 140px;
+    height: 35px;
+    border-radius: 17px;
+    color: var(--light-color);
+    background-color: var(--primary-color);
+}
+
+header .covid p{
+    font-size: 19px;
+    border-radius: 17px;
+    color: var(--light-color);
+}
+
+header .menu{
+    padding-left: 320px;
+    padding-right: 370px;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .menu div a{
+
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 20px;
+}
+header .menu div a:hover{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+header .menu div button {
+    border: none;
+    background-image: url(carrito.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+}
+
+header .menu .logo {
+    background-image: url(logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 220px;
+    height: 100px;
+
+}
+
+header .menu div button span {
+    display: inline-block;
+    position:relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    bottom: 17px;
+    left: 25px;
+
+    color: var(--secondary-color);
+    font-weight: bolder;
+    background-color: var(--light-color);
+}
+
+main{
+    display:inline-block;
+    margin-top: 150px;
+}
+
+main .info_main{
+    display: flex;
+    position: relative;
+    background-image: url(fondo.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 550px;
+}
+
+main .info_main h1{
+    position: relative;
+    display: block;
+    margin-right:1500px;
+    left: 20%;
+    top: 100px;
+    font-size: 50px;
+    color: var(--light-color);
+}
+
+main .info_main p {
+    position: relative;
+    margin-right:1450px;
+    left: 380px;
+    top: 120px;
+    font-size: 20px;
+    color: var(--light-color);
+}
+
+main .info_main button {
+    position: relative;
+    left: 380px;
+    top: 150px;
+    padding: 9px 25px 9px 25px;
+    border-radius: 5px;
+    color: var(--light-color);
+    border-color: var(--light-color);
+    background-color: transparent;
+}
+
+main .soporte {
+    width: 100%;
+    height: 750px;
+}
+main .soporte div{
+    color: var(--dark-color);
+}
+main .soporte div p{
+    color: var(--dark-color);
+}
+main .soporte div p span{
+    display: inline-block;
+    padding-left: 19%;
+    padding-top: 70px;
+    color: var(--dark-color);   
+    
+}
+main .soporte h2{
+    color: var(--dark-color);
+    padding-left: 19%;
+    font-size: 34px;
+    display: inline-block;
+}
+main .soporte div .info_cov{
+    position: relative;
+    left: 1000px;
+    margin-right:1350px;
+    bottom: 50px;
+}
+main .contenedores_info{
+    position: absolute;
+    left: 200px;
+    margin-left: 7%;
+}
+main .contenedores_info article{
+    display: inline-block;
+    margin-left: 50px;
+}
+.contenedores_info .uno{
+    background-color: var(--secondary-color);
+    position: relative;
+    top: 34px;
+    width: 21%;
+    height: 350px;
+}
+.contenedores_info .dos{
+    background-color: var(--secondary-color);
+    position: relative;
+    top: 0px;
+    width: 21%;
+    height: 350px;
+}
+
+.contenedores_info .tres{
+    background-color: var(--secondary-color);
+    position: relative;
+    top: 16px;
+    width: 21%;
+    height: 350px;
+}
+
+.contenedores_info .uno , .dos,.tres{
+    border-radius: 5px;
+}
+
+.contenedores_info span, h3{
+    color: var(--light-color);
+}
+
+.uno div span{
+    position: relative;
+    top: 30px;
+    left: 8%;
+    font-size: 30px;
+}
+.dos div span{
+    position: relative;
+    top: 30px;
+    left: 8%;
+    font-size: 30px;
+}
+
+.tres div span{
+    position: relative;
+    top: 30px;
+    left: 8%;   
+    font-size: 30px;
+}
+
+.uno div h3{
+    text-align: center;
+    position: relative;
+    top: 120px;
+    font-size: 30px;
+}
+.dos div h3{
+    text-align: center;
+    position: relative;
+    top: 120px;
+    font-size: 30px;
+}
+.tres div h3{
+    text-align: center;
+    position: relative;
+    top: 120px;
+    font-size: 30px;
+}
+
+.contenedores_info article .info_art{
+    position: relative;
+    top: 0px;
+}
+.contenedores_info article .info_art_2{
+    position: relative;
+    top: 30px;
+}
+
+.img_alado{
+    background-image: url(Circle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 80px;
+    left: 140px;
+
+}
+
+.img_alado2{
+    background-image: url(Triangle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 80px;
+    left: 140px;
+}
+
+.img_alado3{
+    background-image: url(Rectangle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 80px;
+    left: 140px;
+    width: 100%;
+    height: 100%;
+}
+
+.arbol{
+    background-image: url(arbol.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 100px;
+    width: 100%;
+    height: 550px;
+}
+
+.arbol h2{
+    text-align: right;
+    display: inline-block;
+    color: var(--light-color);
+    font-size: 45px;
+    position: relative;
+    left: 57%;
+    top: 200px;
+}
+
+.arbol p{
+    color: var(--light-color);
+    text-align: right;
+    font-size: 17px;
+    position: relative;
+    top: 220px;
+    right: 300px;
+}
+
+.arbol button{
+    background-color: var(--light-color);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 100px;
+    width: 200px;
+    height: 35px;
+    position: relative;
+    top: 150px;
+    left: 68%;
+}
+
+.venta_producto{
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+    height: 800px;
+}
+
+.venta_producto .horario{
+    display: inline-block;
+    position: relative;
+    left: 350px;
+}
+.open{
+    display: inline-block;
+    position: relative;
+    left: 195px;
+    font-size: 40px;
+    top: 50px;
+}
+
+
+.venta_uno{
+    border-radius: 5px;
+    position: relative;
+    left: 19%;
+    top: 100px;
+    margin-right: 5%;
+    background-color: var(--dark-color);
+    background-image: url(corriendo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 240%;
+    width: 20%;
+    height: 500px;
+}
+
+.venta_dos{
+    border-radius: 5px;
+    position: relative;
+    left: 15%;
+    top: 100px;
+    margin-right: 1%;
+    background-color: var(--dark-color);
+    background-image: url(taza.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 270%;
+    display: inline-block;
+    width: 19%;
+    height: 500px;
+}
+
+.venta_tres{
+    border-radius: 5px;
+    position: relative;
+    left: 15%;
+    top: 130px;
+    background-color: var(--dark-color);
+    background-image: url(mochila.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 240%;
+    display: inline-block;
+    width: 19%;
+    height: 500px;
+}
+
+.venta_texto , .venta_texto2{
+    position: relative;
+    top: 520px;
+    text-align: center;
+}
+.venta_texto3
+{
+    position: relative;
+    top: 490px;
+    text-align: center;
+}
+
+.venta_texto p, .venta_texto2 p, .venta_texto3 p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.venta_texto button, .venta_texto2 button, .venta_texto3 button{
+    margin-top: 20px;
+    border: none;
+    background-color: var(--primary-color);
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    color: var(--light-color);
+    font-weight: bold;
+}
+
+.venta_tres span button{
+    color: var(--light-color);
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    position: relative;
+    top: 20px;
+    left: 70%;
+}
+
+.viewmore{
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    top: 700px;
+    right: 20%;
+}
+
+.contendido_con_imagen{
+    margin-top: 200px;
+    height: 750px;
+}
+
+.contendido_con_imagen span{
+    background-image: url(donia.png);
+    border-radius: 5px;
+    position: relative;
+    left: 19%;
+    top: 130px;
+    background-color: var(--dark-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 19%;
+    height: 450px;
+    z-index: 1;
+}
+.contendido_con_imagen h2{
+    font-size: 50px;
+}
+.contendido_con_imagen .texto_imagen{
+    background-color: var(--secondary-color);
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    border-radius: 5px;
+    left: 12%;
+    height: 550px;
+    width: 930px;
+    color: var(--light-color)
+}
+.texto_img_p{
+    position: relative;
+    left: 37%;
+    top: 80px;
+}
+
+footer{
+    width: 100%;
+    height: 190px;
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+}
+footer .texto_footer{
+    top: 55px;
+    font-size: 13px;
+    display: inline-block;
+    position: relative;
+    left: 45%;
+}
+footer a {
+    color:var(--primary-color);
+    text-decoration: none;
+}
+
+footer div .logo2{
+    position: relative;
+    left: 18%;
+    top: 40px;
+    display: inline-block;
+    background-image: url(logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 220px;
+    height: 100px;
+}
+
+footer div .redes {
+    display: inline-block;
+    position: relative;
+    left: 60%;
+}
+
+footer div .redes .tw{
+    display: inline-block;
+    background-image: url(tw.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+footer div .redes .face{
+    display: inline-block;
+    margin-right: 15px;
+    background-image: url(fa.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+}
+footer div .redes .insta{
+    display: inline-block;
+    background-image: url(Insta.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+}
