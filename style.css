@@ -317,16 +317,17 @@ main .contenedores_info article{
     text-align: right;
     display: inline-block;
     color: var(--light-color);
-    font-size: 45px;
+    font-size: 250%;
     position: relative;
     left: 57%;
+    right: 0%;
     top: 200px;
 }
 
 .arbol p{
     color: var(--light-color);
     text-align: right;
-    font-size: 17px;
+    font-size: 107%;
     position: relative;
     top: 220px;
     right: 16%;
@@ -540,7 +541,7 @@ footer div .logo2{
 footer div .redes {
     display: inline-block;
     position: relative;
-    left: 60%;
+    left: 80%;
 }
 
 footer div .redes .tw{
